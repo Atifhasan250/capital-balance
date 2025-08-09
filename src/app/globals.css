@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+::selection {
+  background-color: hsl(var(--primary));
+  color: #fff;
+}
+
+/* Hide the Next.js development indicator */
+nextjs-portal {
+  display: none !important;
+}
+
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 236 82% 74%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 236 82% 74%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --chart-1: 236 82% 74%;
+    --chart-2: 236 82% 80%;
+    --chart-3: 236 82% 86%;
+    --chart-4: 236 82% 92%;
+    --chart-5: 236 82% 98%;
+    --radius: 1.25rem;
+  }
+  .dark {
+    --background: 30 5% 10%;
+    --foreground: 210 17% 91%;
+    --card: 30 6% 16%;
+    --card-foreground: 210 17% 91%;
+    --popover: 20 7% 16%;
+    --popover-foreground: 210 17% 91%;
+    --primary: 236 82% 74%;
+    --primary-foreground: 210 17% 91%;
+    --secondary: 222 9% 12%;
+    --secondary-foreground: 210 17% 91%;
+    --muted: 222 9% 12%;
+    --muted-foreground: 210 17% 91%;
+    --accent: 236 82% 74%;
+    --accent-foreground: 210 17% 91%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 222 9% 14%;
+    --input: 222 9% 14%;
+    --ring: 236 95% 71%;
+    --chart-1: 236 72% 64%;
+    --chart-2: 236 72% 58%;
+    --chart-3: 236 72% 52%;
+    --chart-4: 236 72% 46%;
+    --chart-5: 236 72% 40%;
+  }
+
+  .light {
+    --background: 210 20% 98%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 236 82% 74%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 236 82% 74%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --chart-1: 236 82% 74%;
+    --chart-2: 236 82% 80%;
+    --chart-3: 236 82% 86%;
+    --chart-4: 236 82% 92%;
+    --chart-5: 236 82% 98%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
